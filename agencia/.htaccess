@@ -1,0 +1,47 @@
+RewriteEngine on
+
+
+RewriteCond %{SCRIPT_FILENAME} !-d  
+RewriteCond %{SCRIPT_FILENAME} !-f  
+
+RewriteRule ^agencia$ 					index.php[NC,L]
+RewriteRule ^formacao_academica/$ 			index.php[NC,L]
+RewriteRule ^conhecimentos/$ 				index.php[NC,L]
+RewriteRule ^cargo_pretendido/$ 			index.php[NC,L]
+RewriteRule ^dados_pessoais/$ 				index.php[NC,L]
+RewriteRule ^dados_basicos/$ 				index.php[NC,L]
+RewriteRule ^experiencia_profissional/$ 		index.php[NC,L]
+
+
+
+ReWriteRule ^ler/(.*)/(.*)/(.*)$        /mvc/view/site/template.php?menu=$1&sub_menu=$2&noticia=$3 [NC]
+ReWriteRule ^ler/(.*)/(.*)/$            /mvc/view/site/template.php?menu=$1&sub_menu=$2 [NC]
+ReWriteRule ^ler/(.*)/(.*)$             /mvc/view/site/template.php?menu=$1&noticia=$2 [NC]
+ReWriteRule ^ler/(.*)/$                 /mvc/view/site/template.php?menu=$1 [NC]
+
+
+
+ReWriteRule ^Fotos/(.*)/(.*)$           /mvc/view/site/template.php?menu=Fotos&sub_menu=$1&categoria=$2 [NC]
+ReWriteRule ^Fotos/(.*)/$               /mvc/view/site/template.php?menu=Fotos&sub_menu=$1 [NC]
+ReWriteRule ^Fotos/(.*)$                /mvc/view/site/template.php?menu=Fotos&categoria=$1 [NC]
+ReWriteRule ^Fotos/$                    /mvc/view/site/template.php?menu=Fotos [NC]
+
+
+
+ReWriteRule ^Vídeos/(.*)/(.*)$          /mvc/view/site/template.php?menu=Vídeos&sub_menu=$1&categoria=$2 [NC]
+ReWriteRule ^Vídeos/(.*)/$              /mvc/view/site/template.php?menu=Vídeos&sub_menu=$1 [NC]
+ReWriteRule ^Vídeos/(.*)$               /mvc/view/site/template.php?menu=Vídeos&categoria=$1 [NC]
+ReWriteRule ^Vídeos/$                   /mvc/view/site/template.php?menu=Vídeos [NC]
+
+RewriteRule ^admin/assets/(.*)$         /admin/public/assets/$1 [R=301,NC,L]
+RewriteRule ^admin$ /index.php [NC]
+RewriteRule ^admin/(.*)/(.*)$ /index.php [NC]
+RewriteRule ^admin/(.*)$ /index.php [NC]
+
+RewriteRule ^server/(.*)/(.*)/(.*)$ /agencia/index.php [NC]
+RewriteRule ^server/(.*)/(.*)/$ /agencia/index.php [NC]
+RewriteRule ^server/(.*)/(.*)$ /agencia/index.php [NC]
+RewriteRule ^server/(.*)$ /agencia/index.php [NC]
+
+
+ErrorDocument 404 /site/404.php

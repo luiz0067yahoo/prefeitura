@@ -1,0 +1,147 @@
+#hero {
+    background: url('../img/guarda 102.jpg') no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+    /*background-size: cover;*/
+    /*padding-top: 9.5rem;
+  padding-bottom: 28%;*/
+    padding-bottom: 50px;
+}
+
+@media (max-width: 425px) {
+    #hero {
+        background-size: 600px 250px;
+        padding-bottom: 70px;
+    }
+    #hero h1 {
+        margin-top: -150px !important;
+        text-align: left;
+        width: 300px;
+        font-size: 26px;
+    }
+    .logo-prefeitura img {
+        width: 200px !important;
+    }
+    .logo-iluminado img {
+        width: 100px !important;
+    }
+    .video1 iframe {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    #hero {
+        background-size: 1000px 270px;
+    }
+    #hero h1 {
+        margin-top: -100px !important;
+        width: 400px;
+    }
+    .logo-prefeitura img {
+        width: 300px !important;
+    }
+    .logo-iluminado img {
+        width: 200px !important;
+    }
+    .video1 iframe {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #hero {
+        background-size: 1100px 350px;
+        padding-bottom: 200px;
+    }
+    #hero h1 {
+        margin-top: -30px !important;
+        font-size: 30px;
+    }
+    .logo-prefeitura img {
+        width: 400px !important;
+    }
+    .logo-iluminado img {
+        width: 350px !important;
+    }
+}
+
+@media screen and (min-width: 1026px) {
+    #hero {
+        /*padding-bottom: 110px;*/
+        padding-bottom: 350px;
+    }
+}
+
+#hero h1 {
+    color: #fff;
+    margin-top: 100px;
+    font-weight: 800;
+}
+
+.title-know {
+    color: #263a6d !important;
+    font-weight: 800 !important;
+}
+
+.logo-prefeitura img {
+    width: 500px;
+}
+
+.logo-iluminado img {
+    width: 300px;
+}
+
+.image-top {
+    position: absolute;
+    margin-top: 10px;
+    z-index: 1;
+}
+
+.list-files {
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+abbr[title] {
+    border-bottom: none !important;
+    cursor: inherit !important;
+    text-decoration: none !important;
+}
+
+.list-files>a {
+    margin-bottom: 20px;
+    color: rgb(56, 56, 56);
+}
+
+.list-files>a>abbr>div:hover {
+    background: #004723;
+    color: #fff;
+    cursor: pointer;
+}
+
+.list-files p {
+    font-size: 13px;
+    letter-spacing: -1px;
+}
+
+.icon-pdf {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Second Level */
+
+.ul-documents ul {
+    margin-left: 15px;
+}
+
+.modal-body>img {
+    width: 104%;
+    margin-top: -16px;
+    margin-bottom: -16px;
+    margin-left: -16px;
+    margin-right: -16px;
+}
